@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-2-casecade & specifity</title>
+    <style>
+        /* The specifity of this selector is 1 */
+        h1{
+            color: aqua;
+        } 
+        /* The specifity of this selector is 1+10=11 */
+        h1.yellow{
+            color: rgb(255, 255, 0) ;
+        }
+        /* The specifity of this selector is 10 */
+        .cred{
+            color: red;
+
+        }
+
+            /* The specifity is 1+10+10+10+10=41            href= 10 , hoever{pseudo selector}=10 */
+
+        a.harryclass.rosan-class[href]:hover{
+            color: blueviolet;
+        }
+        /* when there are only class selector then the last one will be selected  */
+        /* When there is ony id selector then the last one id will be selected */
+        /* when there is Id and Clases there is specifity will define the which will work */
+        /* The order of the specifity is : inline style> ID selector>class or attribute selector
+           >Element Selector > Universal selector.. :universal has least power and inline style have the most  */
+        /* Values of selectors and their values */
+       /* univeersal selector:0
+        Element Selector and pseudo element: 1
+        Class Selector & pseudo: clasess 10 
+        ID selectors:100
+        Inline style : 1000  // the Highest*/
+        /* !important Have the highest prority even more than the inline styel */
+        
+        /* The specifity of this selector is 10 */
+        .cpurple{
+            color: purple;
+        }
+        /* The specifity of this selector is 10 */ 
+        [data-x=a]{  /*attribute selector*/
+            background-color: #01114b;
+        }
+    </style>
+</head>
+<body>
+    <h1  class="yellow yellow cred cpurple" data-x="a" >Css Specifity & casecade</h1>
+    
+</body>
+</html>
