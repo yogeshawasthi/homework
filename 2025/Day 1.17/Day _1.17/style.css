@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+li {
+    display:inline;
+}
+ul{
+    /* border: 2px solid green; */
+    background-color: aqua;
+    border-radius: 3px;
+}
+nav{
+    padding: 20px 0px;
+    background-color: aqua;
+}
+
+nav ul li{
+    margin: 2px;
+    padding: 19px;
+    text-decoration: double;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.main{
+    padding: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 400px;
+    background-color: green;
+}
+#hii{
+    background-color: rgb(255, 0, 230);
+    height: 350px;
+    width: 350px;
+}
+#hi{
+    background-color: rgb(255, 247, 0);
+    height: 350px;
+    width: 350px;
+}
+.message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(122, 163, 120);
+    /* height: 50vh; */
+    /* width: 80vw; */
+    /* background-color: red; */
+    /* border: 2px solid black; */
+    /* border-radius: 10px 15px; */
+}
+div.message h1{
+    border: 3px solid black;
+    border-radius: 63px;
+    padding: 60px 60px;
+    margin: 60px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 40px;
+    /* flex-flow: column-reverse; */
+    background-color: rgb(49, 138, 138);
+}
+
+
+ .fix{
+    align-self:center;
+}
